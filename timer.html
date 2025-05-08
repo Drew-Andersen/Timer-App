@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h4>Timer App</h4>
+      <nav id="navbar">
+        <ul class="nav-ul">
+          <li class="nav-item"><a class="nav-item-link" href="./stopwatch.html">Stop Watch</a></li><!--Time counts up -->
+          <li class="nav-item"><a class="nav-item-link" href="./timer.html">Timer</a></li><!--Time counts down and buzzes after -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="center">Timer</h1>
+      <div class="button-div">
+        <button class="button-left">Start</button>
+        <button class="button-right">Stop</button>
+      </div>
+      <div class="outer-border center">
+        <div class="middle-border">
+          <div class="inner-border">
+            <!-- <h1 id="display">00:00</h1> -->
+            <input id="display" type="text" value="00:00" class="display-input" />
+          </div>
+        </div>
+      </div>
+      <div class="buffer">
+        <button class="button-reset">Reset</button>
+      </div>
+      <div class="time-div">
+        <button class="time">- 0:30</button>
+        <button class="time">- 1:00</button>
+        <button class="time">+ 0:30</button>
+        <button class="time">+ 1:00</button>
+      </div>
+    </main>
+    
+    <audio id="alarm-sound" src="./alarm-sound.mp3" preload="auto"></audio>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./timer.js"></script>
+  </body>
+</html>
