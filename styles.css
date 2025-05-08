@@ -8,6 +8,17 @@ header {
     margin: 0px 25px;
 }
 
+.icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    margin-right: 15px;
+}
+
 .nav-ul {
     display: flex;
 }
